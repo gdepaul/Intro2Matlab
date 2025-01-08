@@ -6,8 +6,10 @@ function [] = lecture5()
 
     disp('1. Reverse an array.')
 
-    disp('2. Given an array, sort it using selection sort.')
+    disp('2. Write a program to compute the product of two matrices.')
 
-    disp('3. Given an array, sort it using insertion sort.')
+    disp('3. Given an array, sort it using selection sort.')
+
+    disp('4. Given an array, sort it using insertion sort.')
     
 end
