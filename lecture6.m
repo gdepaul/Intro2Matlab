@@ -5,8 +5,10 @@ function [] = lecture6()
 %%              have access to a rich set of manpages that detail how to 
 %%              program in Matlab. 
 
-    disp('1. Write a function to tests to see if a sudoku puzzle has indeed been solved.')
+    disp('1. Write a function to input an array and return its transpose.')
 
-    disp('2. Write a function to identify the first 100 prime numbers.')
+    disp('2. Write a function to tests to see if a sudoku puzzle has indeed been solved.')
+
+    disp('3. Write a function to identify the first 100 prime numbers.')
     
 end
