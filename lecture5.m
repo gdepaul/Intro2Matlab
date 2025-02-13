@@ -19,6 +19,13 @@ function [] = lecture5()
 
     disp('4c. Invert the colors of the image and display it.')
 
+    disp('4 and a half. Plot a 2D scatter plot for the following matrix') 
+    X = [4,5; 6,7; 8,9; 10,11]
+    
+    disp('4 and three quarters. Plot a 3D scatter plot for the following matrix') 
+    X = [4,5,15; 6,7,18; 8,9,21; 10,11,25]
+    
+
 %% Section 2 - Calling and Defining Custom Functions 
 
     disp('5. Use the function "createE" to solve for x for the system Ax = b. Use inv to check your answer')
@@ -67,11 +74,14 @@ function [] = lecture5()
     disp('16. Are the columns of matrix A below linearly independent? (Function must return True or False)')
     A = [5, -2, 3; -1, 0, -1; 0, -2, -2; -5, 7, 2]
 
+
+
 end
 
 function E = createE(n, multiplyThisRow, byAlpha, addToThisRow)
 
     E = eye(n);
+    
     E(addToThisRow,multiplyThisRow) = byAlpha;
 
 end

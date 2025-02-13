@@ -1,6 +1,6 @@
 function [] = lecture7()
 
-%% Lecture 7 - Eigenvalue Decomposition and Low Rank Approximations
+%% Lecture 7 - Orthogonalization and Curve Fitting 
 
 
 end

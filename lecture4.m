@@ -24,7 +24,6 @@ function [] = lecture4()
     disp('   5b. Access the third element of the array.')
 
 
-
     disp('   5c. Access the ninth element of the array if it has a ninth element. Otherwise, print CANT ACCESS ELEMENT.')
 
 
