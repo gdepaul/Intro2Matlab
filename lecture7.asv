@@ -1,0 +1,62 @@
+function [] = lecture7()
+
+%% Lecture 7 - Curve Fitting and Least Squares
+
+%% Two fundamental problems 
+%% Two entirely different approaches
+%% Both solved using RREF
+
+
+%% Section 1 - Curve (Over) Fitting 
+
+%% Find a polynomial of the same degree as the size of the sample! 
+
+disp('Determine the polynomial p(x) = a_0 + a_1 x whose graph passes through the following points.')
+X = [2.9,5.3]
+Y = [-2.3,1.4]
+
+
+disp('Determine the polynomial p(x) = a_0 + a_1 x + a_2 x^2 whose graph passes through the following points.')
+X = [1,2,3]
+Y = [4,0,12]
+
+
+disp('Find a polynomial that fits the following set of points.')
+X = [-2, -1, 0, 1, 2]
+Y = [3,5,1,4,10]
+
+
+%% Section 2 - Least Squares 
+
+%% Find linear functions of least distance from the points themselves.  
+
+
+X = 0:0.5:20
+Y = 3 * X - 1 + normrnd(0,5,1,length(X)) 
+
+
+
+M = xlsread("Salary_dataset.xlsx")
+
+
+
+
+M = xlsread("winequality-red.xlsx")
+
+
+
+%% Section 3 - Bias / Variance Tradeoff in Mathematical Modeling 
+
+%% Requires more mathematical finesse than just linear algebra (need to 
+%% understand some convex/proximal optimization theory too). But we can 
+%% still learn about it. 
+
+M = xlsread("census.xlsx")
+
+
+M = xlsread("franke.xlsx")
+
+f = fit([M(:,1), M(:,2)],M(:,3),'linearinterp');
+plot( f, [T.x, T.y], T.z )
+
+end
