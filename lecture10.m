@@ -1,5 +1,5 @@
 function [] = lecture10()
 
-%% Lecture 10 - Principal Component Analysis
+%% Lecture 10 - 
 
 end
